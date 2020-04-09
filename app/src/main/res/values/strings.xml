@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">XXX</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="app_will_finish_because_error">App will be close because of error</string>
+</resources>
