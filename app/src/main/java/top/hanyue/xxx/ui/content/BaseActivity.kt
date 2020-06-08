@@ -4,7 +4,9 @@ import android.app.Dialog
 import android.os.Bundle
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
 import top.hanyue.xxx.ActivityManager
+import top.hanyue.xxx.MyApplication
 import top.hanyue.xxx.R
+import top.hanyue.xxx.utils.DensityUtil
 import top.hanyue.xxx.utils.DialogFactory
 import top.hanyue.xxx.utils.EasyToast
 
@@ -19,6 +21,7 @@ abstract class BaseActivity: RxAppCompatActivity(){
         beforeOnCreate()
         super.onCreate(savedInstanceState)
         ActivityManager.pushActivity(this)
+        DensityUtil.setCustomDensity(this, MyApplication.instance())
         setContentView(layoutResID())
         onViewCreated()
         initViewAndEvent()

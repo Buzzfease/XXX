@@ -12,7 +12,7 @@ buildscript {
     ext.okhttp_version = '3.10.0'
     ext.dagger_version = '2.15'
     ext.glide_version =  '4.10.0'
-    ext.adapter_version = '2.9.21'
+    ext.adapter_version = '2.9.46'
 
     repositories {
         maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
